@@ -1,0 +1,14 @@
+{% macro human_reading_time(time) %}
+    {% if time==1 %}
+        {{ time }} minute
+    {% else %}
+        {{ time }} minutes
+    {% endif %}
+{% endmacro human_reading_time %}
+
+{% macro post_header(page, excerpt=false) %}
+    <header class="post-header">
+        {{ page.date }} <strong><a href="{{ page.permalink }}">{{ page.title }}</a></strong> <em>{{ macros::human_reading_time(time=page.reading_time) }}</em>
+    </header>
+{% endmacro post_header %}
+
