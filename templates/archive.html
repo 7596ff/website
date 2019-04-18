@@ -1,0 +1,14 @@
+{% extends "index.html" %}
+
+{% import "macros.html" as macros %}
+
+{% block content %}
+   {% for year, posts in section.pages | group_by(attribute="year") %}
+        <h2>{{ year }}</h2>
+        {% for post in posts %}
+            {{ macros::post_header(page=post) }}
+        {% endfor %}
+        </ul>
+    {% endfor %} 
+{% endblock content %}
+

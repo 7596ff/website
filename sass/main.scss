@@ -26,8 +26,16 @@ html,body {
         width: fit-content;
     }
 
-    .site-subtitle {
+    .site-nav {
         text-align: right;
+        max-width: 40%;
+        display: flex;
+        justify-content: space-between;
+
+        .nav-item {
+            font-size: 1.4em;
+            margin: 10px;
+        }
     }
 }
 

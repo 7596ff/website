@@ -6,7 +6,7 @@
     {% endif %}
 {% endmacro human_reading_time %}
 
-{% macro post_header(page, excerpt=false) %}
+{% macro post_header(page) %}
     <header class="post-header">
         {{ page.date }} <strong><a href="{{ page.permalink }}">{{ page.title }}</a></strong> <em>{{ macros::human_reading_time(time=page.reading_time) }}</em>
     </header>
