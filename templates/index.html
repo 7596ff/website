@@ -8,28 +8,21 @@
     </head>
     <body>
         <div class="container">
-            <header>
-                <div class="table-container">
-                    <div id="title" class="table-tile">
-                        <h1>Cassie McCarthy</h1>
-                    </div>
-                    <div class="table-tile"></div>
-                    <div id="subtitle" class="table-tile">
-                        <p>deposed programmer turned political science major. pronouns: she/her</p>
-                    </div>
-                </div>
+            <header class="site-header">
+                <h1 class="site-title">Cassie McCarthy</h1>
+                <p class="site-subtitle">deposed programmer turned political science major. pronouns: she/her</p>
             </header>
             <main>
                 {% block content %}
-                    <h3>Posts</h3>
+                    <h2>Posts</h2>
                     <div class="posts">
                         {% set posts = get_section(path="posts/_index.md") %}
                         {% for page in posts.pages %}
                             {{ macros::post_header(page=page, excerpt=true) }}
                         {% endfor %}
                     </div>
-                    <h3>Who is she?</h3>
-                    <p> im girl,,</p>
+                    <h2>Who is she?</h2>
+                    <p>im girl,,</p>
                 {% endblock content %}
             </main>
         </div>

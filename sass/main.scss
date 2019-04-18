@@ -18,26 +18,27 @@ main {
     // margin-top: 3em;
 }
 
-.table-container {
-    display: table-row;
-}
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
 
-.post-header {
-    font-size: 16px;
-}
+    .site-title {
+        width: fit-content;
+        margin: 0px;
+    }
 
-.table-tile {
-    display: table-cell;
-    width: 33%;
-    vertical-align: bottom;
-}
-
-#subtitle {
-    text-align: right;
+    .site-subtitle {
+        margin: 0px;
+    }
 }
 
 a {
     color: $blue;
     text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
