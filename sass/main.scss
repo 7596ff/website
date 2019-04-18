@@ -21,7 +21,7 @@ main {
 .site-header {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: baseline;
 
     .site-title {
         width: fit-content;
