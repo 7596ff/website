@@ -3,7 +3,7 @@ title = "Resume"
 +++
 
 ### Personal Attriubtes
-* Champion of he Fidelity Investments High School Technology Design Challenge
+* Champion of the Fidelity Investments High School Technology Design Challenge
   * Member of a team of AOIT Students
   * Developed a presentation for a Fidelity Product
 * Write and maintain chat bots for Discord
