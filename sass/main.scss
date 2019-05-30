@@ -28,7 +28,7 @@ html,body {
 
     .site-nav {
         text-align: right;
-        max-width: 40%;
+        max-width: 50%;
         display: flex;
         justify-content: space-between;
 
@@ -51,5 +51,17 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+.leaflet-container {
+    max-width: $content-width;
+    height: $content-width * 0.6;
+    margin: 12px auto;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 

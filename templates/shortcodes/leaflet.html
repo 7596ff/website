@@ -1,0 +1,22 @@
+<div class="leaflet" id="{{id}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" />
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js"></script>
+    <script src="//api.tiles.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.3.1/leaflet-omnivore.min.js"></script>
+
+    <script type="text/javascript">
+        if (typeof map == "undefined") {
+            map = {};
+        }
+
+        map["{{id}}"] = L.map("{{id}}");
+        L.tileLayer("http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+            attribution: "Map data &copy; <a href=\"http://www.osm.org\">OpenStreetMap</a>"
+        }).addTo(map["{{id}}"]);
+
+        map["{{id}}"].gpx_layer = omnivore.gpx("{{ gpx | safe }}").on("ready", function() {
+            map["{{id}}"].fitBounds(map["{{id}}"].gpx_layer.getBounds());
+        }).addTo(map["{{id}}"]);
+    </script>
+</div>
+
