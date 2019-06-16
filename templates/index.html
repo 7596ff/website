@@ -24,7 +24,7 @@
                     <div class="posts">
                         {% set posts = get_section(path="posts/_index.md") %}
                         {% for page in posts.pages %}
-                            {% if loop.index == 5 %}{% break %}{% endif %}
+                            {% if loop.index > 5 %}{% break %}{% endif %}
                             {{ macros::post_header(page=page) }}
                         {% endfor %}
                         <br>
