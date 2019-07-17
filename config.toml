@@ -1,7 +1,9 @@
-title = "Cassie McCarthy"
 base_url = "https://7596ff.com"
 
-compile_sass = true
+title = "Cassie McCarthy"
 highlight_code = true
+highlight_theme = "gruvbox-dark"
 generate_rss = true
+taxonomies = [ { name = "categories" } ]
+compile_sass = true
 
