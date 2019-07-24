@@ -34,3 +34,10 @@ This ends up looking pretty cool (if I do say so myself):
 
 Lately, I've been more and more able to be sort of proud of what I do. I'm letting myself share little things like this and not feel like I'm copying something or someone. It's really nice. I've also been working on generalizing my dotfiles, and creating an install script for new servers I provision. The whole thing is slightly cobbled together, so I don't really feel like trying to explain it in a post.
 
+## Update
+
+I had to update one line of the colorman script, because not setting the foreground color made it default to the same color as the background.
+```sh
+LESS_TERMCAP_so=$'\e[01;38:2:0:0:0;48:2:117:150:255m'
+```
+
