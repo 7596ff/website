@@ -10,8 +10,8 @@
         }
 
         map["{{id}}"] = L.map("{{id}}");
-        L.tileLayer("http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-            attribution: "Map data &copy; <a href=\"http://www.osm.org\">OpenStreetMap</a>"
+        L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+            attribution: "Map data &copy; <a href=\"https://www.osm.org\">OpenStreetMap</a>"
         }).addTo(map["{{id}}"]);
 
         map["{{id}}"].gpx_layer = omnivore.gpx("{{ gpx | safe }}").on("ready", function() {
