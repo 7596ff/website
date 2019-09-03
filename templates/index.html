@@ -1,45 +1,17 @@
-{% import "macros.html" as macros %}
+{% extends "main.html" %}
 
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="{{ get_url(path="main.css") }}">
-        <link rel="icon" href="{{ get_url(path="/images/favicon.png") }}">
-        <link rel="alternate" type="application/rss+xml" title="RSS feed for 7596ff.com" href="{{ get_url(path="rss.xml") }}">
-        <title>Cassie McCarthy</title>
-    </head>
-    <body>
-        <div class="container">
-            <header class="site-header">
-                <h1 class="site-title">Cassie McCarthy</h1>
-                <div class="site-nav">
-                    <div class="nav-item"><a href="/">Home</a></div>
-                    <div class="nav-item"><a href="/posts">Posts</a></div>
-                    <div class="nav-item"><a href="/resume">Resume</a></div>
-                </div>
-            </header>
-            <main>
-                {% block content %}
-                    <h2>Posts</h2>
-                    <div class="posts">
-                        {% set posts = get_section(path="posts/_index.md") %}
-                        {% for page in posts.pages %}
-                            {% if loop.index > 5 %}{% break %}{% endif %}
-                            {{ macros::post_header(page=page) }}
-                        {% endfor %}
-                        <br>
-                        See more posts in the <a href="/posts">archive</a>.
-                    </div>
-                    <h2>Who is she?</h2>
-                    <img alt="selfie" src="{{ resize_image(path="./selfie.jpg", width=300, op="fit_width") }}">
-                    <p>My pronouns are <a href="http://pronoun.is/she/her">she/her</a>. I'm a trans woman living in North Carolina. I am a former computer science student, currently studing political science, philosphy and gender studies.</p>
-                {% endblock content %}
-            </main>
-        </div>
-        <footer>
-            <p><a href="https://www.twitter.com/7596ff">Twitter</a> | <a href="https://www.github.com/7596ff">GitHub</a> | <a href="https://discord.gg/xM7gmFc">Discord Server</a> | <a href="{{ get_url(path="rss.xml") }}">RSS</a></p>
-        </footer>
-    </body>
-</html>
-
+{% block content %}
+    <h2>Posts</h2>
+    <div class="posts">
+        {% set posts = get_section(path="posts/_index.md") %}
+        {% for page in posts.pages %}
+            {% if loop.index > 5 %}{% break %}{% endif %}
+            {{ macros::post_header(page=page) }}
+        {% endfor %}
+        <br>
+        See more posts in the <a href="/posts">archive</a>.
+    </div>
+    <h2>Who is she?</h2>
+    <img alt="selfie" src="{{ resize_image(path='./selfie.jpg', width=300, op='fit_width') }}">
+    <p>My pronouns are <a href="http://pronoun.is/she/her">she/her</a>. I'm a trans woman living in North Carolina. I am a former computer science student, currently studing political science, philosphy and gender studies.</p>
+{% endblock content %}
