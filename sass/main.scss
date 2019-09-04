@@ -5,46 +5,12 @@
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700');
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i,700,700i&display=swap');
 
-.container {
-    margin: 0 auto;
-    max-width: $content-width;
-}
-
 html,body {
     color: $black;
     background-color: $white;
     font-family: $base-font;
     font-size: $base-size;
     text-align: left;
-}
-
-.site-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-
-    .site-title {
-        width: fit-content;
-    }
-
-    .site-nav {
-        text-align: right;
-        max-width: 50%;
-        display: flex;
-        justify-content: space-between;
-
-        .nav-item {
-            font-size: 1.4em;
-            margin: 10px;
-        }
-    }
-}
-
-footer {
-    font-size: 0.9rem;
-    text-align: center;
-    padding: 0.9rem;
-    clear: left;
 }
 
 a {
@@ -54,25 +20,6 @@ a {
 
 a:hover {
     text-decoration: underline;
-}
-
-.leaflet-container {
-    max-width: $content-width;
-    height: $content-width * 0.6;
-    margin: 12px auto;
-}
-
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-pre {
-    font-family: $monospace;
-    font-size: 14px;
-
-    padding: 1em;
 }
 
 code {
@@ -87,9 +34,60 @@ code {
     border-radius: 5%;
 }
 
+pre {
+    font-family: $monospace;
+    font-size: 14px;
+
+    padding: 1em;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 img[alt="selfie"] {
     float: left;
     padding-right: 32px;
+}
+
+footer {
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 0.9rem;
+    clear: left;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: $content-width;
+}
+
+.leaflet-container {
+    max-width: $content-width;
+    height: $content-width * 0.6;
+    margin: 12px auto;
+}
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+    .site-title {
+        width: fit-content;
+    }
+
+    .site-nav {
+        display: flex;
+        justify-content: space-between;
+
+        .nav-item {
+            font-size: 1.4em;
+            margin: 10px;
+        }
+    }
 }
 
 .twitter-tweet {
