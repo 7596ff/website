@@ -35,7 +35,7 @@ they    cori
 we      cori
 ```
 
-As soon as *corisus* was said out loud, and immortalized onto the chalkboard, I felt an actualization of cori in my heart. An air of accomplishment warmed the room. Everyone seemed elated that we had finally pinned this emotion down. Club ended with some closing statements, and everyone filtered out slowly.
+As soon as *corisus* was said out loud, and immortalized onto the chalkboard, I felt an actualization of *cori* in my heart. An air of accomplishment warmed the room. Everyone seemed elated that we had finally pinned this emotion down. Club ended with some closing statements, and everyone filtered out slowly.
 
 Finally having a word to describe this feeling of joy derived from other's joy caused me nothing but elation. I haven't a clue why I feel so passionate about this. But according to the prior topics, a human's connection to the world is through language. Naming everything, arbitrarily with "wooami", or less arbitrarily with *corisus*, can be severely powerful. 
 
