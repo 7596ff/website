@@ -3,10 +3,13 @@
 {% import "macros.html" as macros %}
 
 {% block content %}
-   {% for year, posts in section.pages | group_by(attribute="year") %}
+   {% for year, posts in section.pages | filter(attribute="draft", value=false) | group_by(attribute="year") %}
         <h2>{{ year }}</h2>
-        {% for post in posts %}
-            {{ macros::post_header(page=post) }}
+        {% for month, posts in posts | group_by(attribute="month") %}
+            <h4>{{ "1000-" ~ month ~ "-10" | date(format="%B") }}</h4>
+            {% for post in posts %}
+                {{ macros::post_header(page=post) }}
+            {% endfor %}
         {% endfor %}
         </ul>
     {% endfor %} 

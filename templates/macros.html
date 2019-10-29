@@ -8,7 +8,7 @@
 
 {% macro post_header(page) %}
     <header class="post-header">
-        {{ page.date }} <strong><a href="{{ page.permalink }}">{{ page.title }}</a></strong> <em>{{ macros::human_reading_time(time=page.reading_time) }}</em>
+        {{ page.date | date(format="%B %d") }} <a href="{{ page.permalink }}">{{ page.title }}</a> <em>{{ macros::human_reading_time(time=page.reading_time) }}</em>
     </header>
 {% endmacro post_header %}
 
