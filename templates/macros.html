@@ -7,7 +7,7 @@
 {% endmacro human_reading_time %}
 
 {% macro post_header(page) %}
-    <header class="post-header">
+    <header class="archive-post post-header">
         {{ page.date | date(format="%B %d") }} <a href="{{ page.permalink }}">{{ page.title }}</a> <em>{{ macros::human_reading_time(time=page.reading_time) }}</em>
     </header>
 {% endmacro post_header %}

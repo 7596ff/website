@@ -12,12 +12,14 @@
     <body>
         <div class="container">
             <header class="site-header">
-                <h1 class="site-title">Cassie McCarthy</h1>
-                <div class="site-nav">
-                    <div class="nav-item"><a href="/">Home</a></div>
-                    <div class="nav-item"><a href="/posts">Posts</a></div>
-                    <div class="nav-item"><a href="/resume">Resume</a></div>
-                </div>
+                <h1 class="site-title"><a href="/">Cassie McCarthy</a></h1>
+                <div class="site-header-break"></div>
+                <nav class="site-nav">
+                    <ul>
+                        <li><a href="/posts">Posts</a></li>
+                        <li><a href="/resume">Resume</a></li>
+                    </ul>
+                </nav>
             </header>
             <main>
                 {% block content %}
