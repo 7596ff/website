@@ -8,7 +8,7 @@
         {% for month, posts in posts | group_by(attribute="month") %}
             <h4 class="archive-month">{{ "1000-" ~ month ~ "-10" | date(format="%B") }}</h4>
             {% for post in posts %}
-                {{ macros::post_header(page=post) }}
+            <div class=archive-post>{{ macros::post_header(page=post) }}</div>
             {% endfor %}
         {% endfor %}
         </ul>
