@@ -12,6 +12,9 @@
         See more posts in the <a href="/posts">archive</a>.
     </div>
     <h2>Who is she?</h2>
-    <img alt="selfie" src="{{ resize_image(path='./selfie.jpg', width=300, op='fit_width') }}">
-    <p>My pronouns are <a href="http://pronoun.is/she/her">she/her</a>. I'm a trans woman living in North Carolina. I am a former computer science student, currently studing political science, philosphy and gender studies. I am employed at AppalCART.</p>
+    <div class="h-card">
+        <img class="u-photo" alt="selfie" src="{{ resize_image(path='./selfie.jpg', width=300, op='fit_width') }}">
+        <p>My pronouns are <a href="http://pronoun.is/she/her">she/her</a>. I'm a trans <span class="p-gender-identity">woman</span> living in <span class="p-locality">Boone</span>, <span class="p-region">North Carolina</span>. I currently study philosphy and gender studies, and formerly computer science and political science. I am employed at <a href="https://www.appalcart.com/">AppalCART</a>.</p>
+    </div>
 {% endblock content %}
+
