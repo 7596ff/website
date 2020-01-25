@@ -3,7 +3,7 @@ title = "Resume"
 +++
 
 ### Personal Attriubtes
-* Contribte to many open data projects
+* Contribute to many open data projects
   * [MusicBrainz](https://musicbrainz.org/user/7596ff)
   * [OpenStreetMap](https://www.openstreetmap.org/user/7596ff/history)
 * Write and maintain chat bots for Discord
