@@ -2,7 +2,7 @@
 title = "Resume"
 +++
 
-### Personal Attriubtes
+### Personal Attributes
 * Contribute to many open data projects
   * [MusicBrainz](https://musicbrainz.org/user/7596ff)
   * [OpenStreetMap](https://www.openstreetmap.org/user/7596ff/history)
