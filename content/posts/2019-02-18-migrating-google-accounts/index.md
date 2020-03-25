@@ -1,6 +1,6 @@
 +++
 title = "Migrating Google Accounts"
-date = 2019-02-18
+date = 2019-02-18T16:00:00Z
 +++
 
 One of the many perils of being transgender is moving from one online personality to another. My old Google account contains my deadname, so obviously I don't want that to represent me. This post is going to contain all the steps I took to leave my old google account behind.

@@ -1,6 +1,6 @@
 +++
 title = "My Incredible Journey"
-date = 2019-02-12
+date = 2019-02-12T16:00:00Z
 +++
 
 Some two years ago, I started work on a Discord bot. I had in mind a program that would display patch notes from Dota 2. After adding tons more features and fixing the resultant bugs, the robot grew into what it is today: an elegant medium between OpenDota and Discord.

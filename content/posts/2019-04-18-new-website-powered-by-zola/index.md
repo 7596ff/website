@@ -1,6 +1,6 @@
 +++
 title = "New website, powered by Zola"
-date = 2019-04-18
+date = 2019-04-18T18:05:00Z
 +++
 
 This is my first post on my new website. I wrote it using the [Zola](https://www.getzola.org) framework. It's a really slick static website generator written in Rust.

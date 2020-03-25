@@ -1,6 +1,6 @@
 +++
 title = "Artist Somasis Hints At New Album"
-date = 2019-08-23
+date = 2019-08-23T19:12:00Z
 +++
 
 Music producer Somasis (Kylie J. McClain) has recently hinted at a new album.

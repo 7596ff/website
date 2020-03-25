@@ -1,6 +1,6 @@
 +++
 title = "Am I a Man?"
-date = 2019-08-21
+date = 2019-08-21T18:37:00Z
 +++
 
 It's the third day of classes. Everything is stressful and crazy. I've consumed way too much caffeine in three days for one being. I thought I was super excited for the First Day of Classes™, but I'm getting bogged down by stress and gender. 

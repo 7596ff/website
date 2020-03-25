@@ -1,6 +1,6 @@
 +++
 title="manpage colors"
-date=2019-07-17
+date=2019-07-17T05:58:00Z
 +++
 
 I'd been fooling around with manpage colors. Most thanks goes to [this blogpost](https://boredzo.org/blog/archives/2016-08-15/colorized-man-pages-understood-and-customized) for laying the groundwork, and [this post](https://gist.github.com/XVilka/8346728) (with [this wikipedia article](https://en.wikipedia.org/wiki/ANSI_escape_code#8-bit)) for sort of explaining how to escape true colors.

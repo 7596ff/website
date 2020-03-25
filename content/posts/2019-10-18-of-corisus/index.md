@@ -1,6 +1,6 @@
 ﻿+++
 title="Of Corisus"
-date=2019-10-18
+date=2019-10-18T16:02:00Z
 +++
 
 I'm not a linguist, but I have an insatiable fascination for the discipline. The study of words, language, and the evolution of both have always been a curiosity. Today's meeting of my university's philosophy club really spoke to me. I hope it speaks to you the same.

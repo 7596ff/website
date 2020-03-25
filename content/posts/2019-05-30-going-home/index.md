@@ -1,6 +1,6 @@
 +++
 title = "Going Home"
-date = 2019-05-30
+date = 2019-05-30T21:16:00Z
 +++
 
 I've been crazy busy these past few weeks. I moved in to a new place for the summer, and I love it. I'm taking summer classes to catch back up on my degree, and they're going smoothly. I also went to pick up my girlfriend Kylie's gift from Linville Falls. I got her a sign that says "Overlook Ahead", pictured below:

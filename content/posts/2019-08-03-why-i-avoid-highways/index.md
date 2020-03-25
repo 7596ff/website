@@ -1,6 +1,6 @@
 +++
 title = "Why I avoid highways"
-date = 2019-08-02
+date = 2019-08-03T06:28:00Z
 +++
 
 I've been doing a lot of driving recently. I left my very quaint hometown of Cary on August First. In my navigator, I charted up Washington, District of Columbia. And since I left my house at seven in the morning, I broke for lunch at my cousin's restaurant near Charlottesville, Virginia. 

@@ -1,6 +1,6 @@
 +++
 title="South East Linux Fest"
-date=2019-06-15
+date=2019-06-15T16:39:00Z
 +++
 
 I enjoy listening to a lot of podcasts. Those close to me would say that I listen to way too many podcasts. Before the intervention one of the podcasts that I enjoyed listening to was Destination Linux. The hosts kept talking about this neat little convention for Linux users that they were attending. I checked it out on [their website](http://southeastlinuxfest.org) and it turned out it was close enough for me to consider attending. I made the plans and decided to go with Kylie.
