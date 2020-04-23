@@ -118,6 +118,17 @@ footer {
     margin-right: auto;
 }
 
+.footnote-reference a:before,
+.footnote-definition sup:before {
+    content: "[";
+}
+
+.footnote-reference a:after,
+.footnote-definition sup:after {
+    content: "]";
+}
+
+
 .footnote-definition {
     p {
         display: inline;
