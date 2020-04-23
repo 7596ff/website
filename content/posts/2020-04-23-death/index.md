@@ -1,7 +1,7 @@
 +++
 title = "Death"
-date=2020-04-23T20:00:00Z
-draft=true
+date = 2020-04-23T21:00:00Z
+draft = true
 +++
 
 What is the tipping point of one's crimes to allow their death to be celebrated? My original take
