@@ -91,14 +91,12 @@ point to be made here about the culture of open source not being very welcoming,
 sequestered from the community at this point that I can't make it. I just wanted to share my
 thoughts and feelings with anyone who cares to read. Thanks.
 
-### Footnotes [^1] Susan's website is
-[https://security.engineering/](https://security.engineering/).
+### Footnotes 
 
-[^2]
-[https://www.derbycon.com/blog/derbycon-9-0-every-beginning-has-an-end/](https://www.derbycon.com/blog/derbycon-9-0-every-beginning-has-an-end/)
+[^1]: Susan's website is [https://security.engineering/](https://security.engineering/).
 
-[^3]
-[https://portswigger.net/daily-swig/derbycon-blames-disruptive-minority-in-calling-time-on-conference](https://portswigger.net/daily-swig/derbycon-blames-disruptive-minority-in-calling-time-on-conference)
+[^2]: [https://www.derbycon.com/blog/derbycon-9-0-every-beginning-has-an-end/](https://www.derbycon.com/blog/derbycon-9-0-every-beginning-has-an-end/)
 
-[^4]
-[https://en.wikipedia.org/wiki/Eric_S._Raymond#Political_beliefs_and_activism](https://en.wikipedia.org/wiki/Eric_S._Raymond#Political_beliefs_and_activism)
+[^3]: [https://portswigger.net/daily-swig/derbycon-blames-disruptive-minority-in-calling-time-on-conference](https://portswigger.net/daily-swig/derbycon-blames-disruptive-minority-in-calling-time-on-conference)
+
+[^4]: [https://en.wikipedia.org/wiki/Eric_S._Raymond#Political_beliefs_and_activism](https://en.wikipedia.org/wiki/Eric_S._Raymond#Political_beliefs_and_activism)
