@@ -77,9 +77,9 @@ and Alzheimer's, can cause death at an unforeseen and inconvenient time. All of 
 modern healthcare can take to prevent pain in the sufferers of these kinds of diseases should be
 taken. This is the central axiom of Medicare for All.
 
-More directly: Even if the person suffering from these types of diseases is John McCain, or anyone
-else that has committed crimes that pass the threshold, should be medically treated and cared for
-for just the same.
+More directly: even if the person suffering from these types of diseases is John McCain, or anyone
+else that has committed crimes that pass the threshold, they should be medically treated and cared
+for for just the same.
 
 This leads us to separate the death from a disease with the death of an individual. Death is a
 tragedy, and death from a lethal disease that kills indiscriminately is more so. So when John McCain
