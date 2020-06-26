@@ -7,7 +7,7 @@ title = "Resume"
   * [MusicBrainz](https://musicbrainz.org/user/7596ff)
   * [OpenStreetMap](https://www.openstreetmap.org/user/7596ff/history)
 * Write and maintain chat bots for Discord
-  * [rohrkatze-rotator](https://www.github.com/7596ff/rohrkatze-rotator)
+  * [rohrkatze-rotator](https://www.github.com/7596ff/rohrkatze-rotator) (now [rr-rs](https://www.github.com/7596ff/rr-rs))
   * [listen-bot](https://www.github.com/7596ff/listen-bot) (project was sunset in fall 2019)
 * Champion of the Fidelity Investments High School Technology Design Challenge
   * Member of a team of AOIT Students
@@ -24,7 +24,7 @@ title = "Resume"
 * Summer intern at Qualcomm - June to August 2014
 
 ### Formal Education
-* Second year student at Appalachian State
+* Third year student at Appalachian State
   * Double Major in Philosophy and Gender, Women's, & Sexuality Studies
 * Academy of Information Technology (AOIT) Graduate - 2015
   * AOIT is a "school within a school" requiring a special application
