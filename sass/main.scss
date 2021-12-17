@@ -2,10 +2,11 @@
 
 @import "variables";
 
-@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700');
-@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i,700,700i&display=swap');
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700");
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i,700,700i&display=swap");
 
-html,body {
+html,
+body {
     color: $black;
     background-color: $white;
     font-family: $base-font;
@@ -27,7 +28,7 @@ code {
     font-size: 0.8em;
 
     background-color: #282828;
-    color: #FDF4C1;
+    color: #fdf4c1;
     padding: 0em 0.25em;
 
     border: 1px solid black;

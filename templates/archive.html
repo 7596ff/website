@@ -3,15 +3,20 @@
 {% import "macros.html" as macros %}
 
 {% block content %}
-   {% for year, posts in section.pages | filter(attribute="draft", value=false) | group_by(attribute="year") %}
-        <h2 class="archive-year">{{ year }}</h2>
-        {% for month, posts in posts | group_by(attribute="month") %}
-            <h4 class="archive-month">{{ "1000-" ~ month ~ "-10" | date(format="%B") }}</h4>
-            {% for post in posts %}
-            <div class=archive-post>{{ macros::post_header(page=post) }}</div>
-            {% endfor %}
-        {% endfor %}
-        </ul>
-    {% endfor %} 
-{% endblock content %}
 
+{% for year, posts in section.pages | filter(attribute="draft", value=false) | group_by(attribute="year") %}
+<h2 class="archive-year">{{ year }}</h2>
+
+{% for month, posts in posts | group_by(attribute="month") %}
+<h4 class="archive-month">{{ "1000-" ~ month ~ "-10" | date(format="%B") }}</h4>
+
+{% for post in posts %}
+<div class=archive-post>{{ macros::post_header(page=post) }}</div>
+{% endfor %}
+
+{% endfor %}
+
+</ul>
+{% endfor %}
+
+{% endblock content %}

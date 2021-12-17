@@ -2,47 +2,52 @@
 
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="{{ get_url(path='main.css') }}">
-        <link rel="icon" href="{{ get_url(path='/images/favicon.png') }}">
-        <link rel="alternate" type="application/rss+xml" title="RSS feed for 7596ff.com" href="{{ get_url(path='rss.xml') }}">
-        <title>Cassie McCarthy</title>
-    </head>
-    <body>
-        <div class="container">
-            <header class="site-header h-card">
-                <h1 class="site-title p-name"><a href="/"><span class="p-given-name">Cassie</span> <span class="p-family-name">McCarthy</span></a></h1>
-                <div class="site-header-break"></div>
-                <nav class="site-nav">
-                    <ul>
-                        <li><a href="/posts">Posts</a></li>
-                        <li><a href="/parchment">Parchment</a></li>
-                        <li><a href="/resume">Resume</a></li>
-                    </ul>
-                </nav>
-            </header>
-            <main>
-                {% block content %}
-                {% endblock content %}
-            </main>
-        </div>
-        <footer>
-            <p><a href="https://twitter.com/7596ff">Twitter</a> | <a href="https://github.com/7596ff">GitHub</a> | <a href="{{ get_url(path='rss.xml') }}">RSS</a></p>
-        </footer>
-        <script>
-            (function() {
-                if (window.location.hostname != "www.7596ff.com") return;
 
-                window.counter = 'https://7596ff.goatcounter.com/count'
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ get_url(path='main.css') }}">
+    <link rel="icon" href="{{ get_url(path='/images/favicon.png') }}">
+    <link rel="alternate" type="application/rss+xml" title="RSS feed for 7596ff.com"
+        href="{{ get_url(path='rss.xml') }}">
+    <title>Cassie McCarthy</title>
+</head>
 
-                var script = document.createElement('script');
-                script.async = 1;
-                script.src = '//gc.zgo.at/count.js';
-                var ins = document.getElementsByTagName('script')[0];
-                ins.parentNode.insertBefore(script, ins)
-            })();
-        </script>
-    </body>
+<body>
+    <div class="container">
+        <header class="site-header h-card">
+            <h1 class="site-title p-name"><a href="/"><span class="p-given-name">Cassie</span> <span
+                        class="p-family-name">McCarthy</span></a></h1>
+            <div class="site-header-break"></div>
+            <nav class="site-nav">
+                <ul>
+                    <li><a href="/posts">Posts</a></li>
+                    <li><a href="/parchment">Parchment</a></li>
+                    <li><a href="/resume">Resume</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            {% block content %}
+            {% endblock content %}
+        </main>
+    </div>
+    <footer>
+        <p><a href="https://twitter.com/7596ff">Twitter</a> | <a href="https://github.com/7596ff">GitHub</a> | <a
+                href="{{ get_url(path='rss.xml') }}">RSS</a></p>
+    </footer>
+    <script>
+        (function () {
+            if (window.location.hostname != "www.7596ff.com") return;
+
+            window.counter = 'https://7596ff.goatcounter.com/count'
+
+            var script = document.createElement('script');
+            script.async = 1;
+            script.src = '//gc.zgo.at/count.js';
+            var ins = document.getElementsByTagName('script')[0];
+            ins.parentNode.insertBefore(script, ins)
+        })();
+    </script>
+</body>
+
 </html>
-

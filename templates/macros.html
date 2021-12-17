@@ -1,14 +1,14 @@
 {% macro human_reading_time(time) %}
-    {% if time==1 %}
-        {{ time }} minute
-    {% else %}
-        {{ time }} minutes
-    {% endif %}
+{% if time==1 %}
+{{ time }} minute
+{% else %}
+{{ time }} minutes
+{% endif %}
 {% endmacro human_reading_time %}
 
 {% macro post_header(page) %}
-    <header class="post-header">
-        {{ page.date | date(format="%B %d") }} <a href="{{ page.permalink }}">{{ page.title }}</a> <em>{{ macros::human_reading_time(time=page.reading_time) }}</em>
-    </header>
+<header class="post-header">
+    {{ page.date | date(format="%B %d") }} <a href="{{ page.permalink }}">{{ page.title }}</a> <em>{{
+        macros::human_reading_time(time=page.reading_time) }}</em>
+</header>
 {% endmacro post_header %}
-

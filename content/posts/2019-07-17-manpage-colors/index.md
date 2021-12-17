@@ -5,12 +5,13 @@ date=2019-07-17T05:58:00Z
 
 I'd been fooling around with manpage colors. Most thanks goes to [this
 blogpost](https://boredzo.org/blog/archives/2016-08-15/colorized-man-pages-understood-and-customized)
-for laying the groundwork, and [this post](https://gist.github.com/XVilka/8346728) (with [this
-wikipedia article](https://en.wikipedia.org/wiki/ANSI_escape_code#8-bit)) for sort of explaining how
-to escape true colors.
+for laying the groundwork, and [this
+post](https://gist.github.com/XVilka/8346728) (with [this wikipedia
+article](https://en.wikipedia.org/wiki/ANSI_escape_code#8-bit)) for sort of
+explaining how to escape true colors.
 
-Some of the terms in the posts were a bit confusing for me, so along with this snippet I'll try to
-explain in my own words what they mean.
+Some of the terms in the posts were a bit confusing for me, so along with this
+snippet I'll try to explain in my own words what they mean.
 
 ```sh
 colorman() {
@@ -31,25 +32,27 @@ colorman() {
 alias man=colorman
 ```
 
-`md` and `me` are the primary emphasis modes. The first section of the escape sequence, `01`, sets
-the text to bold mode. `so` and `se` is standout mode, which as far as I can tell only applies to
-the progress bar on the bottom left. `us` and `ue` are underline mode, which is the other mode of
-emphasis the manpage supplies. 
+`md` and `me` are the primary emphasis modes. The first section of the escape
+sequence, `01`, sets the text to bold mode. `so` and `se` is standout mode,
+which as far as I can tell only applies to the progress bar on the bottom left.
+`us` and `ue` are underline mode, which is the other mode of emphasis the
+manpage supplies. 
 
 This ends up looking pretty cool (if I do say so myself):
 
 ![the result](image1.png)
 
-Lately, I've been more and more able to be sort of proud of what I do. I'm letting myself share
-little things like this and not feel like I'm copying something or someone. It's really nice. I've
-also been working on generalizing my dotfiles, and creating an install script for new servers I
-provision. The whole thing is slightly cobbled together, so I don't really feel like trying to
+Lately, I've been more and more able to be sort of proud of what I do. I'm
+letting myself share little things like this and not feel like I'm copying
+something or someone. It's really nice. I've also been working on generalizing
+my dotfiles, and creating an install script for new servers I provision. The
+whole thing is slightly cobbled together, so I don't really feel like trying to
 explain it in a post.
 
 ## Update
 
-I had to update one line of the colorman script, because not setting the foreground color made it
-default to the same color as the background.
+I had to update one line of the colorman script, because not setting the
+foreground color made it default to the same color as the background.
 ```sh
 LESS_TERMCAP_so=$'\e[01;38:2:0:0:0;48:2:117:150:255m'
 ```
