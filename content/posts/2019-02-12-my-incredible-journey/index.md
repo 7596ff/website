@@ -24,7 +24,7 @@ back on during my higher level classes.
 
 Luckily, a friend of mine named Malcolm Diller has written a similar bot called
 MangoByte. You can add it here:
-[MangoByte](https://discordapp.com/oauth2/authorize?permissions=314432&scope=bot&client_id=213476188037971968")
+[MangoByte](https://discordapp.com/oauth2/authorize?permissions=314432&scope=bot&client_id=213476188037971968)
 
 Additionally, you can contact me on my server here and ask me questions:
 [https://discord.gg/xM7gmFc](https://discord.gg/xM7gmFc)
