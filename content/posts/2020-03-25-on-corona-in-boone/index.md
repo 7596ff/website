@@ -4,7 +4,7 @@ date=2020-03-25T16:14:00Z
 +++
 
 Everyone is being affected by Coronavirus. My university has moved to
-exclusively online classes with only one week to prepare, restauraunts are
+exclusively online classes with only one week to prepare, restaurants are
 mandated drive through or pickup only, and I am not allowed to work at one of my
 jobs. But it sure doesn't feel like it. 
 

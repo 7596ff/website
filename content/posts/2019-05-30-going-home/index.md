@@ -13,10 +13,10 @@ below:
 
 The story behind this sign is pretty cute. Kylie and I took a trip to Knoxville
 to meet a friend of mine. We purposely took the long way through the mountains
-and experiened a beautiful drive that I'll never forget. Unfortunately we didn't
-record GPX files for this trip, but it was very romantic and meaningful. On the
-way back we constantly passed these signs that said "Overlook Ahead". We saw at
-least thirty before losing count.
+and experienced a beautiful drive that I'll never forget. Unfortunately we
+didn't record GPX files for this trip, but it was very romantic and meaningful.
+On the way back we constantly passed these signs that said "Overlook Ahead". We
+saw at least thirty before losing count.
 
 I'm very slowly becoming an OpenStreetMap contributor, I downloaded OsmAnd from
 F-Droid and made my first contribution (my own apartment!) on the main website.

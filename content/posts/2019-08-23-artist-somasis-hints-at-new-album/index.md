@@ -5,7 +5,7 @@ date = 2019-08-23T19:12:00Z
 
 Music producer Somasis (Kylie J. McClain) has recently hinted at a new album.
 
-In a tweet, the popular producer speculated on whether or not another aritst
+In a tweet, the popular producer speculated on whether or not another artist
 known as SGAP or SoGreatAndPowerful would return, then alluded to a new project.
 
 {{ twitter(id="1164909467747700738",

@@ -22,14 +22,15 @@ definitely learned so many things through this journey. If I continue to pursue
 a computer science degree at my college, I will have so much experience to look
 back on during my higher level classes.
 
-Luckily, a friend of mine named Malcolm Diller has written a similar bot called MangoByte. You can
-add it here:
+Luckily, a friend of mine named Malcolm Diller has written a similar bot called
+MangoByte. You can add it here:
 [MangoByte](https://discordapp.com/oauth2/authorize?permissions=314432&scope=bot&client_id=213476188037971968")
 
 Additionally, you can contact me on my server here and ask me questions:
 [https://discord.gg/xM7gmFc](https://discord.gg/xM7gmFc)
 
-Thank you so much for financially and emotionally supporting me through this journey. I'll always
-remember all the friends I've made through developing listen-bot. Yours truly,
+Thank you so much for financially and emotionally supporting me through this
+journey. I'll always remember all the friends I've made through developing
+listen-bot. Yours truly,
 
 Cassandra McCarthy

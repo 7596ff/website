@@ -67,7 +67,7 @@ She finally got around to describing her 501(c)7 social club called the Onion
 Futures Club Limited, or OFCL. The group was founded on the idea that "it's okay
 to be wrong", and that "we shouldn't self censor to appease other people". The
 group advertises full member anonymity, besides the three chairpersons in charge
-of the budgets. Dues are requrired to vote and potential members must prove
+of the budgets. Dues are required to vote and potential members must prove
 themselves worthy of the group.
 
 She talked about how her ideal member's meeting is a cookout where each member

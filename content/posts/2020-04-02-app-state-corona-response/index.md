@@ -21,7 +21,7 @@ paid leave for student employees. The latest one details an [opt-in pass/no
 credit](https://registrar.appstate.edu/coronavirus-updates) system. 
 
 While I am usually critical of the chancellor and the school's elite and their
-profit-first academcis-second choices, their response to Coronavirus has been
+profit-first academics-second choices, their response to Coronavirus has been
 excellent. On March 1st, they created a [tracking
 website](https://www.appstate.edu/go/coronavirus/) containing all the
 information they have officially released regarding COVID-19. This is in large
