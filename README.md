@@ -1,1 +1,0 @@
-It's my website. I used design principles and layouts from https://github.com/17cupsofcoffee/seventeencups.net. 
