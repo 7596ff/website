@@ -1,0 +1,1 @@
+I build tools that serve people, not platforms. Right now I'm working on distributed agent systems, reading critical theory, and trying to give everyone access to the apparatus of knowledge. I believe software should be honest about what it is and who it's for.

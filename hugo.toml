@@ -1,0 +1,25 @@
+baseURL = 'https://7596ff.github.io/website/'
+languageCode = 'en-us'
+title = 'Cassie McCarthy'
+
+[params]
+  tagline = 'Software · Writing · Research'
+  description = 'I build tools that serve people, not platforms.'
+
+[menu]
+  [[menu.main]]
+    name = 'projects'
+    url = '/projects/'
+    weight = 1
+  [[menu.main]]
+    name = 'writing'
+    url = '/writing/'
+    weight = 2
+  [[menu.main]]
+    name = 'about'
+    url = '/about/'
+    weight = 3
+  [[menu.main]]
+    name = 'cv'
+    url = '/cv/'
+    weight = 4

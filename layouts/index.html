@@ -1,0 +1,39 @@
+{{ define "main" }}
+<div class="statement">
+  <div class="tagline">{{ .Site.Params.tagline }}</div>
+  {{ .Content }}
+</div>
+
+<div class="section">
+  <div class="section-label">Featured Projects</div>
+  {{ range where .Site.RegularPages "Section" "projects" }}
+  {{ if .Params.featured }}
+  <div class="project-item">
+    <div class="project-header">
+      <a href="{{ .RelPermalink }}" class="project-name">{{ .Title }}</a>
+      <span class="project-lang">{{ .Params.language }}</span>
+    </div>
+    <div class="project-desc">{{ .Params.description }}</div>
+    {{ with .Params.role }}<div class="project-role">{{ . }}</div>{{ end }}
+  </div>
+  {{ end }}
+  {{ end }}
+  <a href="{{ "projects/" | relURL }}" class="more-link">all projects →</a>
+</div>
+
+<div class="section">
+  <div class="section-label">Featured Writing</div>
+  {{ range where .Site.RegularPages "Section" "writing" }}
+  {{ if .Params.featured }}
+  <div class="writing-item">
+    <div class="writing-header">
+      <a href="{{ .RelPermalink }}" class="writing-title">{{ .Title }}</a>
+      <span class="writing-year">{{ .Params.year }}</span>
+    </div>
+    <div class="writing-desc">{{ .Params.description }}</div>
+    {{ with .Params.coauthor }}<div class="writing-coauthor">with {{ . }}</div>{{ end }}
+  </div>
+  {{ end }}
+  {{ end }}
+</div>
+{{ end }}

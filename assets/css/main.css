@@ -1,0 +1,270 @@
+/* Reset */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* Base */
+:root {
+  --bg: #f5f0eb;
+  --text: #2c2c2c;
+  --text-muted: #666;
+  --text-light: #999;
+  --accent: #8b7355;
+  --border: #e0d8cf;
+  --max-width: 700px;
+  --serif: Georgia, 'Times New Roman', serif;
+  --sans: system-ui, -apple-system, sans-serif;
+  --mono: 'SF Mono', 'Fira Code', monospace;
+}
+
+body {
+  font-family: var(--serif);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Layout */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Nav */
+.site-nav {
+  border-bottom: 1px solid var(--border);
+  padding: 1.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.site-nav .site-name {
+  font-family: var(--sans);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.site-nav .site-name:hover { text-decoration: none; }
+
+.site-nav nav {
+  display: flex;
+  gap: 1.5rem;
+  font-family: var(--sans);
+  font-size: 0.8rem;
+}
+
+/* Section labels */
+.section-label {
+  font-family: var(--sans);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--accent);
+  margin-bottom: 1.2rem;
+}
+
+/* Homepage statement */
+.statement {
+  padding: 3rem 0 2rem;
+}
+
+.statement .tagline {
+  font-family: var(--sans);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+.statement p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #444;
+}
+
+/* Sections */
+.section {
+  padding: 1.5rem 0;
+  border-top: 1px solid var(--border);
+}
+
+/* Project list */
+.project-item {
+  margin-bottom: 1.2rem;
+}
+
+.project-item .project-header {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  margin-bottom: 0.2rem;
+}
+
+.project-item .project-name {
+  font-family: var(--sans);
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--text);
+}
+
+.project-item .project-lang {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  color: var(--text-light);
+}
+
+.project-item .project-desc {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.project-item .project-role {
+  font-size: 0.75rem;
+  color: var(--text-light);
+  font-style: italic;
+  margin-top: 0.2rem;
+}
+
+/* Writing list */
+.writing-item {
+  margin-bottom: 1rem;
+}
+
+.writing-item .writing-header {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  margin-bottom: 0.2rem;
+}
+
+.writing-item .writing-title {
+  font-family: var(--sans);
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--text);
+}
+
+.writing-item .writing-year {
+  font-size: 0.7rem;
+  color: var(--text-light);
+}
+
+.writing-item .writing-desc {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.writing-item .writing-coauthor {
+  font-size: 0.75rem;
+  color: var(--text-light);
+  font-style: italic;
+  margin-top: 0.3rem;
+}
+
+/* More link */
+.more-link {
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  display: inline-block;
+}
+
+/* Footer */
+.site-footer {
+  border-top: 1px solid var(--border);
+  padding: 1rem 0;
+  font-family: var(--sans);
+  font-size: 0.7rem;
+  color: var(--text-light);
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-footer .footer-links {
+  display: flex;
+  gap: 1rem;
+}
+
+/* Single page content */
+.page-content {
+  padding: 2rem 0 3rem;
+}
+
+.page-content h1 {
+  font-family: var(--sans);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.page-content h2 {
+  font-family: var(--sans);
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.page-content h3 {
+  font-family: var(--sans);
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.page-content p {
+  margin-bottom: 1rem;
+}
+
+.page-content ul, .page-content ol {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+}
+
+.page-content li {
+  margin-bottom: 0.3rem;
+}
+
+.page-content blockquote {
+  border-left: 2px solid var(--border);
+  padding-left: 1rem;
+  color: var(--text-muted);
+  margin: 1rem 0;
+}
+
+.page-content code {
+  font-family: var(--mono);
+  font-size: 0.85em;
+  background: rgba(0,0,0,0.04);
+  padding: 0.15em 0.3em;
+  border-radius: 3px;
+}
+
+.page-content pre {
+  background: rgba(0,0,0,0.04);
+  padding: 1rem;
+  border-radius: 4px;
+  overflow-x: auto;
+  margin-bottom: 1rem;
+}
+
+.page-content pre code {
+  background: none;
+  padding: 0;
+}

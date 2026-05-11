@@ -1,0 +1,30 @@
+{{ define "main" }}
+<div class="page-content">
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+
+  {{ if eq .Section "projects" }}
+  {{ range .Pages }}
+  <div class="project-item">
+    <div class="project-header">
+      <a href="{{ .RelPermalink }}" class="project-name">{{ .Title }}</a>
+      <span class="project-lang">{{ .Params.language }}</span>
+    </div>
+    <div class="project-desc">{{ .Params.description }}</div>
+    {{ with .Params.role }}<div class="project-role">{{ . }}</div>{{ end }}
+  </div>
+  {{ end }}
+  {{ else if eq .Section "writing" }}
+  {{ range .Pages }}
+  <div class="writing-item">
+    <div class="writing-header">
+      <a href="{{ .RelPermalink }}" class="writing-title">{{ .Title }}</a>
+      <span class="writing-year">{{ .Params.year }}</span>
+    </div>
+    <div class="writing-desc">{{ .Params.description }}</div>
+    {{ with .Params.coauthor }}<div class="writing-coauthor">with {{ . }}</div>{{ end }}
+  </div>
+  {{ end }}
+  {{ end }}
+</div>
+{{ end }}
