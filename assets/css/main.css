@@ -195,7 +195,7 @@ a:focus-visible {
 
 .statement h1 {
   font-family: var(--sans);
-  font-size: clamp(3rem, 8vw, 6.5rem);
+  font-size: clamp(3rem, 8vw, 5.5rem);
   letter-spacing: 0;
   line-height: 0.9;
   margin: 0.75rem 0 1.4rem;
