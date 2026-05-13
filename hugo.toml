@@ -1,8 +1,10 @@
 baseURL = 'https://7596ff.github.io/website/'
-languageCode = 'en-us'
+locale = 'en-US'
 title = 'Cassie McCarthy'
+enableRobotsTXT = true
 
 [params]
+  author = 'Cassie McCarthy'
   tagline = 'Software · Writing · Research'
   description = 'I build tools that serve people, not platforms.'
 

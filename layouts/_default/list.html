@@ -1,30 +1,48 @@
 {{ define "main" }}
-<div class="page-content">
-  <h1>{{ .Title }}</h1>
-  {{ .Content }}
+<section class="apparatus page-shell">
+  <aside class="margin-note">
+    <span class="eyebrow">{{ .Section | default "index" }}</span>
+    {{ if eq .Section "projects" }}
+    <span>artifacts ordered by weight</span>
+    {{ else if eq .Section "writing" }}
+    <span>arguments, methods, witnesses</span>
+    {{ else }}
+    <span>{{ .Site.Params.tagline }}</span>
+    {{ end }}
+  </aside>
+  <div class="page-content">
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
 
-  {{ if eq .Section "projects" }}
-  {{ range .Pages }}
-  <div class="project-item">
-    <div class="project-header">
+    {{ if eq .Section "projects" }}
+    {{ range $index, $page := .Pages.ByWeight }}
+    <article class="artifact-item">
+      <div class="artifact-index">{{ printf "%02d" (add $index 1) }}</div>
+      <div class="artifact-body">
       <a href="{{ .RelPermalink }}" class="project-name">{{ .Title }}</a>
-      <span class="project-lang">{{ .Params.language }}</span>
-    </div>
-    <div class="project-desc">{{ .Params.description }}</div>
-    {{ with .Params.role }}<div class="project-role">{{ . }}</div>{{ end }}
-  </div>
-  {{ end }}
-  {{ else if eq .Section "writing" }}
-  {{ range .Pages }}
-  <div class="writing-item">
-    <div class="writing-header">
+      <div class="artifact-meta">
+        {{ with .Params.language }}<span>{{ . }}</span>{{ end }}
+        {{ with .Params.role }}<span>{{ . }}</span>{{ end }}
+      </div>
+      {{ with .Params.description }}<p>{{ . }}</p>{{ end }}
+      </div>
+    </article>
+    {{ end }}
+    {{ else if eq .Section "writing" }}
+    {{ range .Pages.ByDate.Reverse }}
+    <article class="artifact-item writing-artifact">
+      <div class="artifact-index">{{ .Params.year | default "note" }}</div>
+      <div class="artifact-body">
       <a href="{{ .RelPermalink }}" class="writing-title">{{ .Title }}</a>
-      <span class="writing-year">{{ .Params.year }}</span>
-    </div>
-    <div class="writing-desc">{{ .Params.description }}</div>
-    {{ with .Params.coauthor }}<div class="writing-coauthor">with {{ . }}</div>{{ end }}
+      <div class="artifact-meta">
+        {{ with .Params.coauthor }}<span>with {{ . }}</span>{{ end }}
+        <span>textual apparatus</span>
+      </div>
+      {{ with .Params.description }}<p>{{ . }}</p>{{ end }}
+      </div>
+    </article>
+    {{ end }}
+    {{ end }}
   </div>
-  {{ end }}
-  {{ end }}
-</div>
+</section>
 {{ end }}

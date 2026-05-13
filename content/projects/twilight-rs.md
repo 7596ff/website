@@ -3,7 +3,7 @@ title: twilight-rs
 language: rust
 description: "A modular ecosystem of Rust libraries for the Discord API. 834 stars."
 featured: true
-weight: 5
+weight: 6
 role: "Former core maintainer"
 link: https://github.com/twilight-rs/twilight
 ---

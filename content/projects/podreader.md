@@ -3,7 +3,7 @@ title: podreader
 language: python
 description: "Podcast transcript management for AI agents. Subscribe, fetch, transcribe via whisper, read."
 featured: true
-weight: 3
+weight: 4
 link: https://github.com/7596ff/podreader
 ---
 

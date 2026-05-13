@@ -3,7 +3,7 @@ title: biblio
 language: rust
 description: "Fuzzy search over a BibTeX library. Find papers by title, author, or keyword, get paths to PDFs."
 featured: true
-weight: 2
+weight: 3
 link: https://github.com/7596ff/biblio
 ---
 

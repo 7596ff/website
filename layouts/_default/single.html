@@ -1,7 +1,16 @@
 {{ define "main" }}
-<div class="page-content">
-  <h1>{{ .Title }}</h1>
-  {{ with .Params.description }}<p class="project-desc">{{ . }}</p>{{ end }}
-  {{ .Content }}
-</div>
+<section class="apparatus page-shell">
+  <aside class="margin-note">
+    <span class="eyebrow">{{ .Section | default "page" }}</span>
+    {{ with .Params.language }}<span>{{ . }}</span>{{ end }}
+    {{ with .Params.year }}<span>{{ . }}</span>{{ end }}
+    {{ with .Params.role }}<span>{{ . }}</span>{{ end }}
+    {{ with .Params.coauthor }}<span>with {{ . }}</span>{{ end }}
+  </aside>
+  <article class="page-content">
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.description }}<p class="page-description">{{ . }}</p>{{ end }}
+    {{ .Content }}
+  </article>
+</section>
 {{ end }}

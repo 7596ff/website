@@ -3,15 +3,30 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ if not .IsHome }}{{ .Title }} — {{ end }}{{ .Site.Title }}</title>
-  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
-  {{ $css := resources.Get "css/main.css" }}
-  <link rel="stylesheet" href="{{ $css.RelPermalink }}">
+  {{ $title := cond .IsHome .Site.Title (printf "%s | %s" .Title .Site.Title) }}
+  {{ $description := .Description | default .Summary | default .Site.Params.description | plainify | htmlUnescape }}
+  <title>{{ $title }}</title>
+  <meta name="description" content="{{ $description }}">
+  <link rel="canonical" href="{{ .Permalink }}">
+  <meta property="og:site_name" content="{{ .Site.Title }}">
+  <meta property="og:title" content="{{ $title }}">
+  <meta property="og:description" content="{{ $description }}">
+  <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+  <meta property="og:url" content="{{ .Permalink }}">
+  <meta name="twitter:card" content="summary">
+  {{ with .OutputFormats.Get "RSS" }}
+  <link rel="alternate" type="application/rss+xml" href="{{ .RelPermalink }}" title="{{ $.Site.Title }}">
+  {{ end }}
+  {{ with resources.Get "css/main.css" }}
+    {{ $css := . | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+  {{ end }}
 </head>
 <body>
+  <a class="skip-link" href="#content">Skip to content</a>
   <div class="container">
     {{- partial "nav.html" . -}}
-    <main>
+    <main id="content">
       {{- block "main" . }}{{- end }}
     </main>
     {{- partial "footer.html" . -}}
